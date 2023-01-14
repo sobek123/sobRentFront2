@@ -42,7 +42,7 @@ export function AddWorker(){
         });
       }
     return <div>
-        <Card style={{marginTop:80, borderRadius:15,boxShadow: '10 10 5 black'}}>
+        <Card style={{marginTop:80, borderRadius:15,boxShadow: '10 10 5 black', height: 900}}>
             <CardHeader title="Rejestracja" style={{textAlign:'center'}} ></CardHeader>
         <Formik
                 initialValues={{

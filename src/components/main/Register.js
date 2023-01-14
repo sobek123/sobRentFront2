@@ -95,7 +95,7 @@ export function Register(){
     return <div>
         <h4 style={{ marginLeft: 'auto', marginRight: 'auto', textAlign: 'center'}} id="form" hidden>Aby dokończyć rejestrację, przejdź do swojej skrzynki pocztowej</h4>
 
-        <Card style={{marginTop:80, borderRadius:15,boxShadow: '10 10 5 black', height: 600}} id="card">
+        <Card style={{marginTop:80, borderRadius:15,boxShadow: '10 10 5 black', height: 900}} id="card">
             <CardHeader title="Rejestracja" style={{textAlign:'center'}} ></CardHeader>
         <Formik
                 initialValues={{
