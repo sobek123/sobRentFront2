@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const ADDITIONAL_API_BASE_URL = "http://localhost:8080/additional";
+const ADDITIONAL_API_BASE_URL = "https://sobrent.herokuapp.com/additional";
 
 class AdditionalService{
     getAdditionals(){

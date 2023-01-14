@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const ORDER_API_BASE_URL = "http://localhost:8080/orders";
+const ORDER_API_BASE_URL = "https://sobrent.herokuapp.com/orders";
 
 class OrderService{
     saveOrder(order){

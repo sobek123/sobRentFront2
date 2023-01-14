@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const ROLE_API_BASE_URL = "http://localhost:8080/roles";
+const ROLE_API_BASE_URL = "https://sobrent.herokuapp.com/roles";
 
 class RoleService{
     saveRole(role){

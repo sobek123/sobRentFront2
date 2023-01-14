@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const FULL_ORDER_API_BASE_URL = "http://localhost:8080/fullOrder";
+const FULL_ORDER_API_BASE_URL = "https://sobrent.herokuapp.com/fullOrder";
 
 class FullOrderService{
     saveFullOrder(order){
