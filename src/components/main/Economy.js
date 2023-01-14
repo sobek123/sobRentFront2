@@ -77,14 +77,12 @@ export function Economy(){
       setLoading(true);
       try {
         const user = await AuthService.getCurrentUser();
-        ("u"+user)
+  
         const response = await UserService.findByEmail(user.email)
         setUser(response.data);
-        (user)
-        user.roles.map(e => (e.name))
-        ("Halo"+response.data)
+    
       } catch (error) {
-        (error);
+       
       }
       setLoading(false);
     };
@@ -112,12 +110,12 @@ export function Economy(){
     const fetchData = async () => {
       setLoading(true);
       try {
-        (brand)
+        
         const response = await CarService.getModelsByBrand(brand,"EKONOMICZNE");
         setModels(response.data);
-        ("m"+response.data)
+       
       } catch (error) {
-        (error);
+     
       }
       setLoading(false);
     };
@@ -142,7 +140,7 @@ export function Economy(){
         const response6 = await CarService.getYears();
         setYears(response6.data); 
       } catch (error) {
-        (error);
+ 
       }
       setLoading(false);
     };
@@ -223,14 +221,14 @@ export function Economy(){
         _DATA = response.data.filter(el => el.category === 'EKONOMICZNE')
         }
       } catch (error) {
-        (error);
+      
       }
       setLoading(false);
     };
     fetchData();
   }, [selectedOption]);
 
-  ("Mo"+models)
+
   const content = "Aby dodać samochód do koszyka musisz się zalogować!"
 
   useEffect(() => {
@@ -1050,7 +1048,7 @@ export function Economy(){
             _DATA = response.data
           }
       } catch (error) {
-        (error);
+    
       }
   
       setLoading(false);
@@ -1118,7 +1116,7 @@ export function Economy(){
         setFilteredData(fil)
         _DATA = fil
       } catch (error) {
-        (error);
+ 
       }
       setLoading(false);
     };
@@ -1174,7 +1172,7 @@ export function Economy(){
                 })}
                 onSubmit={
                   fields => {
-                    (fields)
+              
                     
                     setOb(fields)
                   }

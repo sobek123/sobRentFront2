@@ -96,14 +96,14 @@ export function Exclusive(){
       setLoading(true);
       try {
         const user = await AuthService.getCurrentUser();
-        ("u"+user)
+     
         const response = await UserService.findByEmail(user.email)
         setUser(response.data);
-        (user)
-        user.roles.map(e => (e.name))
-        ("Halo"+response.data)
+      
+       
+        
       } catch (error) {
-        (error);
+     
       }
       setLoading(false);
     };
@@ -114,12 +114,12 @@ export function Exclusive(){
     const fetchData = async () => {
       setLoading(true);
       try {
-        (brand)
+   
         const response = await CarService.getModelsByBrand(brand,'EKSKLUZYWNE');
         setModels(response.data);
-        ("m"+response.data)
+        
       } catch (error) {
-        (error);
+   
       }
       setLoading(false);
     };
@@ -200,14 +200,14 @@ export function Exclusive(){
         _DATA = response.data.filter(el => el.category === 'EKSKLUZYWNE')
         }
       } catch (error) {
-        (error);
+ 
       }
       setLoading(false);
     };
     fetchData();
   }, [selectedOption]);
 
-  ("Mo"+models)
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -227,7 +227,7 @@ export function Exclusive(){
         const response6 = await CarService.getYears();
         setYears(response6.data); 
       } catch (error) {
-        (error);
+
       }
       setLoading(false);
     };
@@ -1060,7 +1060,7 @@ if(cars != null){
           _DATA = response.data
         }
       } catch (error) {
-        (error);
+    
       }
   
       setLoading(false);
@@ -1128,11 +1128,11 @@ if(cars != null){
         setCars(fil)
         setFilteredData(fil)
         _DATA = fil
-        ("D"+_DATA)
+ 
         // setShowHook(showTab)
         
       } catch (error) {
-        (error);
+ 
       }
       setLoading(false);
     };
@@ -1188,7 +1188,7 @@ if(cars != null){
                 })}
                 onSubmit={
                   fields => {
-                    (fields)
+            
                     
                     setOb(fields)
                   }

@@ -88,12 +88,12 @@ export function SUV(){
     const fetchData = async () => {
       setLoading(true);
       try {
-        (brand)
+       
         const response = await CarService.getModelsByBrand(brand,'SUV');
         setModels(response.data);
-        ("m"+response.data)
+      
       } catch (error) {
-        (error);
+      
       }
       setLoading(false);
     };
@@ -174,14 +174,14 @@ export function SUV(){
         _DATA = response.data.filter(el => el.category === 'SUV')
         }
       } catch (error) {
-        (error);
+     
       }
       setLoading(false);
     };
     fetchData();
   }, [selectedOption]);
 
-  ("Mo"+models)
+
   const content = "Aby dodać samochód do koszyka musisz się zalogować!"
 
   useEffect(() => {
@@ -202,7 +202,7 @@ export function SUV(){
         const response6 = await CarService.getYears();
         setYears(response6.data); 
       } catch (error) {
-        (error);
+       
       }
       setLoading(false);
     };
@@ -218,14 +218,14 @@ export function SUV(){
       setLoading(true);
       try {
         const user = await AuthService.getCurrentUser();
-        ("u"+user)
+       
         const response = await UserService.findByEmail(user.email)
         setUser(response.data);
-        (user)
+        
         user.roles.map(e => (e.name))
-        ("Halo"+response.data)
+        
       } catch (error) {
-        (error);
+      
       }
       setLoading(false);
     };
@@ -1049,7 +1049,7 @@ export function SUV(){
           _DATA = response.data
         }
       } catch (error) {
-        (error);
+    
       }
   
       setLoading(false);
@@ -1114,7 +1114,7 @@ export function SUV(){
         setFilteredData(fil)
         _DATA = fil
       } catch (error) {
-        (error);
+   
       }
       setLoading(false);
     };
@@ -1170,7 +1170,7 @@ export function SUV(){
                 })}
                 onSubmit={
                   fields => {
-                    (fields)
+              
                     
                     setOb(fields)
                   }

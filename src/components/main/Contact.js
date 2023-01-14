@@ -75,13 +75,13 @@ export function Contact(){
                     acceptTerms: Yup.bool().oneOf([true], "Wyrażenie zogdy na przetwarzanie danych osobowych jest wymagane")
                 })}
                 onSubmit={fields => {
-                    (fields)
+               
                     fields.opened = false
                     setLoading(true)
                     setShowButton(false)
                     // fields.acceptTerms = null
                     ContactService.addContact(fields).then((response) => {
-                        (response);
+               
                         setLoading(false)
                     setShowButton(true)
                         setModalShow(true)
@@ -89,7 +89,7 @@ export function Contact(){
                         // navigaye("/sport");
                         })
                         .catch((error) => {
-                        (error);
+                     
                         });
                 }}>
                 {({ dirty, isValid, values, handleChange, handleBlur,errors,touched }) => {

@@ -77,14 +77,12 @@ export function Comfort(){
       setLoading(true);
       try {
         const user = await AuthService.getCurrentUser();
-        ("u"+user)
+      
         const response = await UserService.findByEmail(user.email)
         setUser(response.data);
-        (user)
-        user.roles.map(e => (e.name))
-        ("Halo"+response.data)
+     
       } catch (error) {
-        (error);
+     
       }
       setLoading(false);
     };
@@ -112,12 +110,12 @@ export function Comfort(){
     const fetchData = async () => {
       setLoading(true);
       try {
-        (brand)
+    
         const response = await CarService.getModelsByBrand(brand, 'KOMFORTOWE');
         setModels(response.data);
-        ("m"+response.data)
+    
       } catch (error) {
-        (error);
+    
       }
       setLoading(false);
     };
@@ -198,14 +196,14 @@ export function Comfort(){
         _DATA = response.data.filter(el => el.category === 'KOMFORTOWE')
         }
       } catch (error) {
-        (error);
+  
       }
       setLoading(false);
     };
     fetchData();
   }, [selectedOption]);
 
-  ("Mo"+models)
+  
 
   useEffect(() => {
     const fetchData = async () => {
@@ -225,7 +223,7 @@ export function Comfort(){
         const response6 = await CarService.getYears();
         setYears(response6.data); 
       } catch (error) {
-        (error);
+ 
       }
       setLoading(false);
     };
@@ -1049,7 +1047,7 @@ export function Comfort(){
           _DATA = response.data
         }
       } catch (error) {
-        (error);
+   
       }
   
       setLoading(false);
@@ -1116,9 +1114,9 @@ export function Comfort(){
         setCars(fil)
         setFilteredData(fil)
         _DATA = fil
-        ("D"+_DATA)  
+   
       } catch (error) {
-        (error);
+    
       }
       setLoading(false);
     };
@@ -1174,7 +1172,7 @@ export function Comfort(){
                 })}
                 onSubmit={
                   fields => {
-                    (fields)
+               
                     
                     setOb(fields)
                   }

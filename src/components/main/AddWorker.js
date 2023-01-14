@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import PasswordStrengthBar from 'react-password-strength-bar';
 import {useNavigate} from 'react-router-dom'
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-
+import { useState } from 'react';
 import AuthService from '../services/AuthService';
 import { Card, CardActions, CardContent, CardHeader, InputAdornment} from '@mui/material';
 import { Label } from '@mui/icons-material';
@@ -15,6 +15,7 @@ import { CustomTextFields } from './CustomTextFields';
 import UserService from '../services/UserService';
 import { Successful } from './Successful';
 import { Footer } from './Footer';
+import { Spinner } from 'react-bootstrap';
 // import { CustomTextField } from './CustomTextFields';
 export function AddWorker(){
     
@@ -26,7 +27,8 @@ export function AddWorker(){
     const [pesel, setPesel] = useState('')
     const [email,setEmail] = useState('')
     const [phoneNumber, setPhoneNumber] = useState('')
-
+    const [showButton,setShowButton] = useState(true)
+    const [loading,setLoading] = useState(false)
     const navigaye = useNavigate()
     const [passwordScore,setPasswordScore] = useState()
     const onSubmit = (values) => {
@@ -178,7 +180,8 @@ export function AddWorker(){
                             <p><span style={{color:'red'}}>*</span> - pola są wymagane</p>
                             <CardActions>
                             <div className="form-group" style={{marginTop:10}}>
-                                <Button type="Submit">Utwórz nowe konto</Button>
+                            {showButton ? <Button type="Submit">Utwórz nowe konto</Button> : ''}
+                            {loading ? <Spinner animation="border" role="status" style={{marginLeft: 'auto', marginRight: 'auto'}}></Spinner> : ''}
                             </div>
                             </CardActions>
                          </div>
