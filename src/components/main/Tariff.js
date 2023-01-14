@@ -312,7 +312,7 @@ const handleDelete = (id) => {
       </Table>
     </TableContainer>
    
-    {  user== null &&  (user.role !== 'ROLE_ADMIN' ||  user.role !== 'WORKER') ? '' : <div style={{textAlign:'center', marginLeft: 'auto', marginRight: 'auto'}}><button className = "btn" onClick={() => setShow(true)} id = "addButton" style={{marginLeft: 'auto', marginRight: 'auto', textAlign: 'center'}}><FaPlusCircle  size={50} color="black"></FaPlusCircle></button></div> }
+    {  user== null ||  (user.role !== 'ROLE_ADMIN' ||  user.role !== 'WORKER') ? '' : <div style={{textAlign:'center', marginLeft: 'auto', marginRight: 'auto'}}><button className = "btn" onClick={() => setShow(true)} id = "addButton" style={{marginLeft: 'auto', marginRight: 'auto', textAlign: 'center'}}><FaPlusCircle  size={50} color="black"></FaPlusCircle></button></div> }
     <br></br>
     <Footer></Footer>
     </div>
