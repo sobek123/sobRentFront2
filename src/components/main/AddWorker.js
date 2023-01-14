@@ -3,7 +3,7 @@ import * as Yup from 'yup';
 import "./SocialMedia.css";
 import { Link } from 'react-router-dom';
 import PasswordStrengthBar from 'react-password-strength-bar';
-import { useState,useNavigate } from 'react';
+import {useNavigate} from 'react-router-dom'
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 import AuthService from '../services/AuthService';
