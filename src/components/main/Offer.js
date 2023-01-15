@@ -1031,7 +1031,7 @@ useEffect(() => {
         <h4>Oferta</h4>
         <hr></hr>
         
-        <Card style={{borderRadius: 15}}>
+        <Card style={{borderRadius: 15, height: 250}}>
         <CardContent>
             <div style={{width: '20%', display: 'inline-block'}}>
             <Select
@@ -1237,7 +1237,7 @@ useEffect(() => {
       
        return (
        
-        <Card id={"card"+index} style={{ maxWidth: 400 ,borderRadius:15 }} key={car.id}>
+        <Card id={"card"+index} style={{ width: 400 ,borderRadius:15 }} key={car.id}>
           <CardMedia
             component="img"
             height="250"
