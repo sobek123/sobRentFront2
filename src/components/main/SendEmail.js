@@ -87,6 +87,8 @@ export function SendEmail(){
                         document.getElementById("sentError").hidden = true
                         })
                         .catch((error) => {
+                        setLoading(false)
+                          setShowButton(true)
                         document.getElementById("sentError").hidden = false
                         document.getElementById("sent").hidden = true
                         });
