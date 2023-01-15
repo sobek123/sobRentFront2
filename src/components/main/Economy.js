@@ -1278,7 +1278,7 @@ export function Economy(){
         {_DATA.currentData().map((car,index) => {
        return (
        
-        <Card id={"card"+index} style={{ maxWidth: 380 ,borderRadius:15 }} key={car.id}>
+        <Card id={"card"+index} style={{ width: 400  ,borderRadius:15 }} key={car.id}>
           <CardMedia
             component="img"
             height="250"
