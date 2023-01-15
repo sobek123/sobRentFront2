@@ -49,7 +49,8 @@ export function Login(){
                         },
                         (error) => {
                           setShow(true)
-
+                            setLoading(false)
+                          setShowButton(true)
                         }
                       );
                 }}>
