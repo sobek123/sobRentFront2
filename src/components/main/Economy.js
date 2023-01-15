@@ -126,7 +126,7 @@ export function Economy(){
     const fetchData = async () => {
       setLoading(true);
       try {
-        const response = await CarService.getCarsExclusive();
+        const response = await CarService.getCarsEconomy();
         setCars(response.data);
         setInitialCars(response.data)
         const response2 = await CarService.getCategories();
