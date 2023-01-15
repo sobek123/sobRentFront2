@@ -79,7 +79,7 @@ export function Login(){
 
                         <div className="form-group">
                             {showButton ? <Button type="submit" style={{textAlign:'center',marginLeft:70}}>Zaloguj</Button> : ''}
-                            {loading ? <Spinner animation="border" role="status" style={{marginLeft: 'auto', marginRight: 'auto',textAlign:'center',marginLeft:70}}></Spinner> : ''}
+                            {loading ? <Spinner animation="border" role="status" style={{marginLeft: 'auto', marginRight: 'auto',textAlign:'center',marginLeft:85}}></Spinner> : ''}
 
 
                         </div>
