@@ -169,8 +169,8 @@ export default function Navbar(){
                             <li><Link class="dropdown-item" to="/uzytkownicy"><FaUserCircle size={20} style={{marginRight:6,marginTop:-3}}></FaUserCircle>Użytkownicy</Link></li>
                             <li><Link class="dropdown-item" to="/zamowienia"><FaRegFile size={20} style={{marginRight:6,marginTop:-3}}></FaRegFile>Zamówienia</Link></li>
                             <li><Link class="dropdown-item" to="/samochody"><FaCarAlt size = {20} style={{marginRight:6,marginTop:-3}}></FaCarAlt>Samochody</Link></li>
-                            { currentUser == null && (currentUser.role !== 'ROLE_ADMIN') ? '':<li><Link class="dropdown-item" to="/pracownicy"><FaUserPlus size={20} style={{marginRight:6,marginTop:-3}}></FaUserPlus>Pracownicy</Link></li> }
-                            { currentUser == null && (currentUser.role !== 'ROLE_ADMIN') ? '' : <li><Link class="dropdown-item" to="/finanse"><FaCoins size = {20} style={{marginRight:6}}></FaCoins>Finanse</Link></li>}
+                            { currentUser == null && (currentUser.role == 'ROLE_ADMIN') ? '':<li><Link class="dropdown-item" to="/pracownicy"><FaUserPlus size={20} style={{marginRight:6,marginTop:-3}}></FaUserPlus>Pracownicy</Link></li> }
+                            { currentUser == null && (currentUser.role == 'ROLE_ADMIN') ? '' : <li><Link class="dropdown-item" to="/finanse"><FaCoins size = {20} style={{marginRight:6}}></FaCoins>Finanse</Link></li>}
                             <li><Link class="dropdown-item" to="/wiadomosci"><Badge badgeContent={cars} color="success" style={{marginTop:-3}}><FaEnvelope color="action" size = {20} style={{marginRight:6}}/></Badge><span style={{marginLeft:6}}>Wiadomości</span></Link></li>
                         </ul>
                     </li>
