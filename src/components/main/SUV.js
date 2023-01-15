@@ -1125,7 +1125,7 @@ export function SUV(){
         <h4 style={{ width:'100%', textAlign:'center'}}>Grupa SUV</h4>
         <hr></hr>
         
-        <Card style={{borderRadius:15}}>
+        <Card style={{borderRadius:15,height:250}}>
         <CardContent>
             <div style={{width: '20%', display: 'inline-block'}}>
             <Select
