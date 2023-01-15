@@ -201,7 +201,7 @@ export function Users(){
       });
     }
 
-    if(currentUser == null || currentUser.role !== 'ROLE_ADMIN'){
+    if(currentUser == null && (currentUser.role != 'ROLE_ADMIN' || currentUser.role != 'ROLE_WORKER')){
       return <AccessDenied></AccessDenied>
     }else{
     return <div style={{marginTop:80}}>
