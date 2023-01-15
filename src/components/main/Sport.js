@@ -1122,7 +1122,7 @@ const [id,setId] = useState('')
         <h4 style={{ width:'100%', textAlign:'center'}}>Grupa Sportowe</h4>
         <hr></hr>
         
-        <Card style={{borderRadius:15}}>
+        <Card style={{borderRadius:15,height:250}}>
         <CardContent>
             <div style={{width: '20%', display: 'inline-block', zIndex: 1}}>
             <Select
